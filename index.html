@@ -3,112 +3,191 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Beauty & Huidtherapie — Behandelingen voor gezicht en huid</title>
-<meta name="description" content="Huidverbeterende en beautybehandelingen op afspraak. Persoonlijke aandacht, 15 jaar ervaring.">
+<title>Beauty &amp; Huidtherapie — binnenkort open</title>
+<meta name="description" content="Beauty & Huidtherapie opent 1 december 2026. Huidverbeterende en beautybehandelingen op afspraak in een rustige, privé-omgeving.">
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap');
   :root {
-    --ink: #2d2a26;
-    --soft: #6b6259;
-    --bg: #faf7f2;
+    --roze: #d8a7b1;
+    --roze-zacht: #f6e8ec;
+    --blush: #f9f2f4;
+    --goud: #b08d57;
+    --ink: #4a3f44;
+    --soft: #8a7a80;
     --card: #ffffff;
-    --accent: #b08968;
-    --accent-dark: #8a6a4f;
-    --line: #e8e0d5;
+    --line: #ecd9df;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
-    font-family: Georgia, 'Times New Roman', serif;
-    background: var(--bg);
+    font-family: 'Jost', 'Segoe UI', sans-serif;
+    background: linear-gradient(160deg, var(--blush) 0%, var(--roze-zacht) 55%, #fdf6f0 100%);
     color: var(--ink);
-    line-height: 1.65;
+    line-height: 1.7;
+    min-height: 100vh;
   }
-  .wrap { max-width: 900px; margin: 0 auto; padding: 0 1.25rem; }
-  header {
-    padding: 4.5rem 0 3rem;
-    text-align: center;
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 1.5rem; }
+  header { padding: 5rem 0 2.5rem; text-align: center; }
+  .kroon {
+    font-size: 2rem;
+    color: var(--roze);
+    letter-spacing: 0.5em;
+    text-indent: 0.5em;
+    margin-bottom: 1.2rem;
   }
   h1 {
-    font-size: clamp(1.9rem, 5vw, 3rem);
-    font-weight: normal;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(2.1rem, 6vw, 3.2rem);
+    font-weight: 500;
     letter-spacing: 0.5px;
+    color: var(--ink);
   }
   .sub {
-    color: var(--soft);
+    color: #6d5d63;
     font-style: italic;
-    margin-top: 0.75rem;
-    font-size: 1.1rem;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.25rem;
+    margin-top: 0.6rem;
   }
-  section { padding: 2.5rem 0; }
-  h2 {
-    font-weight: normal;
-    font-size: 1.5rem;
-    margin-bottom: 1.25rem;
-    border-bottom: 1px solid var(--line);
-    padding-bottom: 0.5rem;
-  }
-  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; }
-  .card {
+  .bald {
+    margin: 2.2rem auto 0;
     background: var(--card);
     border: 1px solid var(--line);
-    border-radius: 8px;
-    padding: 1.4rem;
+    border-radius: 999px;
+    padding: 1.6rem 3rem;
+    display: inline-block;
+    box-shadow: 0 10px 30px rgba(216,167,177,.25);
   }
-  .card h3 { font-weight: normal; font-size: 1.15rem; margin-bottom: 0.5rem; }
-  .card p { color: var(--soft); font-size: 0.95rem; }
-  .price { color: var(--accent-dark); margin-top: 0.6rem; font-size: 0.95rem; }
-  .about { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 1.75rem; }
-  .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+  .bald .klein {
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: var(--goud);
+    font-weight: 500;
+  }
+  .bald .groot {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.6rem;
+    color: var(--ink);
+    letter-spacing: 1px;
+    margin: .1rem 0 .7rem;
+  }
+  .bald .knop {
+    display: inline-block;
+    background: #c98d99;
+    color: #fff;
+    text-decoration: none;
+    padding: .55rem 1.6rem;
+    border-radius: 999px;
+    font-size: .85rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: background .25s;
+  }
+  .bald .knop:hover { background: #b9828e; }
+  .bloemen {
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 0.8em;
+    text-indent: 0.8em;
+    color: var(--roze);
+    padding: 1.6rem 0 .4rem;
+  }
+  .kaarten { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1.1rem; }
+  .kaart {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 1.3rem 1.2rem;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(216,167,177,.14);
+  }
+  .kaart .ico { font-size: 1.5rem; margin-bottom: .5rem; }
+  .kaart h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 500;
+    font-size: 1.15rem;
+    margin-bottom: .3rem;
+  }
+  .kaart p { color: var(--soft); font-size: .9rem; }
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2.6rem 0 1.6rem;
+    color: var(--goud);
+    font-size: .9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--line));
+  }
+  .divider::after { background: linear-gradient(90deg, var(--line), transparent); }
+  .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1rem; }
   .contact-item {
-    background: var(--card); border: 1px solid var(--line); border-radius: 8px;
-    padding: 1.1rem 1.3rem; font-size: 0.95rem;
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 1.1rem 1.3rem; font-size: .95rem; text-align: center;
+    box-shadow: 0 6px 18px rgba(216,167,177,.14);
   }
-  .contact-item strong { display: block; color: var(--accent-dark); font-weight: normal; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.3rem; }
-  footer { text-align: center; padding: 2.5rem 0 3rem; color: var(--soft); font-size: 0.85rem; border-top: 1px solid var(--line); margin-top: 2rem; }
-  a { color: var(--accent-dark); }
+  .contact-item strong {
+    display: block; color: var(--goud); font-weight: 500;
+    font-size: .8rem; text-transform: uppercase; letter-spacing: 2px;
+    margin-bottom: .35rem;
+  }
+  .contact-item a { color: var(--ink); text-decoration: none; border-bottom: 1px dotted var(--roze); }
+  footer { text-align: center; padding: 2.8rem 0 3.2rem; color: var(--soft); font-size: .82rem; }
+  a { color: var(--goud); }
+  @media (max-width: 480px) {
+    .bald { padding: 1.2rem 1.6rem; }
+    .bald .groot { font-size: 1.3rem; }
+  }
 </style>
 </head>
 <body>
   <div class="wrap">
     <header>
+      <div class="kroon">✿ ❀ ✿</div>
       <h1>Beauty &amp; Huidtherapie</h1>
-      <p class="sub">Persoonlijke huidverbetering en beauty op afspraak — Rotterdam</p>
+      <p class="sub">Huidverbetering &amp; beauty met persoonlijke aandacht</p>
+
+      <div class="bald">
+        <div class="klein">Live vanaf</div>
+        <div class="groot">1 december 2026</div>
+        <a class="knop" href="mailto:info@beautyhuidtherapie.nl">Afspraak aanvragen</a>
+      </div>
     </header>
 
+    <div class="bloemen">✿ ❀ ✿</div>
+
     <section>
-      <h2>Behandelingen</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Huidverbeterende behandeling</h3>
-          <p>Diepe reiniging, peeling en huidanalyse — afgestemd op jouw huid.</p>
-          <p class="price">vanaf €&nbsp;—</p>
+      <div class="kaarten">
+        <div class="kaart">
+          <div class="ico">✨</div>
+          <h3>Huidverbetering</h3>
+          <p>Peelings, huidanalyse en behandelingen afgestemd op jouw huid</p>
         </div>
-        <div class="card">
-          <h3>Gezichtsbehandeling</h3>
-          <p>Verzorgende behandeling met masker en massage voor een frisse huid.</p>
-          <p class="price">vanaf €&nbsp;—</p>
+        <div class="kaart">
+          <div class="ico">🌸</div>
+          <h3>Gezichtsbehandelingen</h3>
+          <p>Van basis tot luxe — verzorging met masker en massage</p>
         </div>
-        <div class="card">
-          <h3>Ontharing &amp; finishing</h3>
-          <p>Epileren, harsen of draadloos ontharen van gezicht en wenkbrauwen.</p>
-          <p class="price">vanaf €&nbsp;—</p>
+        <div class="kaart">
+          <div class="ico">💫</div>
+          <h3>Wimpers &amp; wenkbrauwen</h3>
+          <p>Verven, vormgeven en finishing voor een frisse blik</p>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="about">
-        <h2>Over</h2>
-        <p>Met meer dan 15 jaar ervaring in huidverbetering kijk ik samen met jou naar wat jouw huid écht nodig heeft. Geen standaardtrajecten, maar persoonlijke aandacht — in een rustige, privé-omgeving.</p>
-        <p style="margin-top:0.75rem; color:var(--soft); font-style:italic;">— Lala</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
+      <div class="divider">✿ binnenkort ✿</div>
       <div class="contact-grid">
         <div class="contact-item">
-          <strong>Afspraak maken</strong>
-          Telefoon / WhatsApp: <a href="tel:+310600000000">06&nbsp;-&nbsp;—&nbsp;—&nbsp;—&nbsp;—&nbsp;—</a>
+          <strong>Telefoon / WhatsApp</strong>
+          <a href="tel:+31626093572">06 26 09 35 72</a>
         </div>
         <div class="contact-item">
           <strong>E-mail</strong>
@@ -116,13 +195,13 @@
         </div>
         <div class="contact-item">
           <strong>Locatie</strong>
-          Rotterdam — adres op afspraak
+          Rotterdam — adres volgt bij bevestiging
         </div>
       </div>
     </section>
 
     <footer>
-      © 2026 · KVK 87920980 · beautyhuidtherapie.nl
+      © 2026 · Beauty &amp; Huidtherapie · KVK 87920980
     </footer>
   </div>
 </body>
