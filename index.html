@@ -166,12 +166,15 @@
   }
 
   .tw-chip {
-    display: inline-flex; align-items: center; justify-content: center;
-    background: #fff; border-radius: 999px; padding: 4px 9px; margin-left: 7px;
-    box-shadow: 0 1px 3px rgba(74,63,68,.10);
+    display: flex; align-items: center; justify-content: center;
+    background: #fff; border-radius: 999px; padding: 4px 12px; margin-top: 6px;
+    width: 100%; box-shadow: 0 1px 3px rgba(74,63,68,.10);
   }
   .tw-chip-logo { height: 10px; }
   .knop .pijl { vertical-align: -2px; }
+  a.tw-link, .knop { text-align: center; }
+  a.tw-link { display: inline-flex; flex-direction: column; align-items: center; }
+  .knop { display: inline-flex; flex-direction: column; align-items: center; }
   .pijl { font-size: .95em; opacity: .8; margin-left: 6px; display: inline-block; transition: transform .2s; }
   nav a:hover, .knop:hover { transform: translateY(-1px); }
   nav a:hover .pijl, .knop:hover .pijl { transform: translate(1px, -1px); opacity: 1; }
@@ -188,13 +191,13 @@
       <nav>
         <a href="index.html" class="aktief">Home</a>
         <a href="prijslijst.html">Prijslijst</a>
-        <a class="tw-link" href="https://trea.tw/7MJiUbj4azLucF9tb" target="_blank" rel="noopener">Online boeken <span class="tw-chip"><img src="treatwell-logo.svg" alt="Treatwell" class="tw-chip-logo"></span> <span class="pijl">↗</span></a>
+        <a class="tw-link" href="https://trea.tw/7MJiUbj4azLucF9tb" target="_blank" rel="noopener">Online boeken <span class="pijl">↗</span><span class="tw-chip"><img src="treatwell-logo.svg" alt="Treatwell" class="tw-chip-logo"></span></a>
       </nav>
 
       <div class="bald">
         <div class="klein">Live vanaf</div>
         <div class="groot">1 december 2026</div>
-        <a class="knop" href="https://trea.tw/7MJiUbj4azLucF9tb" target="_blank" rel="noopener">Online boeken <span class="tw-chip"><img src="treatwell-logo.svg" alt="Treatwell" class="tw-chip-logo"></span> <span class="pijl">↗</span></a>
+        <a class="knop" href="https://trea.tw/7MJiUbj4azLucF9tb" target="_blank" rel="noopener">Online boeken <span class="pijl">↗</span><span class="tw-chip"><img src="treatwell-logo.svg" alt="Treatwell" class="tw-chip-logo"></span></a>
       </div>
     </header>
 
