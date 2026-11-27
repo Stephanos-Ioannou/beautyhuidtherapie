@@ -115,13 +115,16 @@
     .cat { padding: 1.3rem 1.2rem 1.1rem; }
   }
 
-  .tw-logo { height: 15px; vertical-align: -3px; }
   .tw-chip {
     display: inline-flex; align-items: center; justify-content: center;
-    background: #fff; border-radius: 999px; padding: 5px 10px;
+    background: #fff; border-radius: 999px; padding: 4px 9px; margin-left: 7px;
+    box-shadow: 0 1px 3px rgba(74,63,68,.10);
   }
-  .tw-chip-logo { height: 11px; }
-  nav a .tw-chip { margin-left: 6px; }
+  .tw-chip-logo { height: 10px; }
+  .pijl { font-size: .95em; opacity: .8; margin-left: 6px; display: inline-block; transition: transform .2s; }
+  nav a:hover, .knop:hover { transform: translateY(-1px); }
+  nav a:hover .pijl, .knop:hover .pijl { transform: translate(1px, -1px); opacity: 1; }
+  nav a:hover, .knop:hover { }
 </style>
 </head>
 <body>
