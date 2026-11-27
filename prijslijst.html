@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Beauty &amp; Huidtherapie — Prijslijst</title>
-<meta name="description" content="Prijslijst Beauty &amp; Huidtherapie Rotterdam — facials, peelings, microneedling, SkinPen, wimpers &amp; wenkbrauwen en meer.">
+<meta name="description" content="Prijslijst Beauty &amp; Huidtherapie Rotterdam — gezichtsbehandelingen, peelings, acne therapie, microneedling, wimpers &amp; wenkbrauwen.">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap');
   :root {
@@ -27,13 +27,7 @@
   }
   .wrap { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
   header { padding: 3.6rem 0 2rem; text-align: center; }
-  .kroon {
-    font-size: 1.8rem;
-    color: var(--roze);
-    letter-spacing: 0.5em;
-    text-indent: 0.5em;
-    margin-bottom: 1.1rem;
-  }
+  .kroon { font-size: 1.8rem; color: var(--roze); letter-spacing: 0.5em; text-indent: 0.5em; margin-bottom: 1.1rem; }
   h1 {
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-size: clamp(2rem, 5.5vw, 3rem);
@@ -47,11 +41,7 @@
     font-size: 1.2rem;
     margin-top: 0.5rem;
   }
-  /* MENU */
-  nav {
-    text-align: center;
-    margin: 1.8rem 0 2.4rem;
-  }
+  nav { text-align: center; margin: 1.8rem 0 2.4rem; }
   nav a {
     display: inline-block;
     color: var(--ink);
@@ -68,7 +58,7 @@
   }
   nav a:hover { color: #fff; background: var(--roze); border-color: var(--roze); }
   nav a.aktief { color: #fff; background: var(--roze); border-color: var(--roze); }
-  /* PRIJSLIJST */
+  .bloemen { text-align: center; font-size: 1.4rem; letter-spacing: 0.8em; text-indent: 0.8em; color: var(--roze); padding: 1.2rem 0 .4rem; }
   .cat {
     background: var(--card);
     border: 1px solid var(--line);
@@ -80,7 +70,7 @@
   .cat h2 {
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.45rem;
     color: var(--ink);
     text-align: center;
     margin-bottom: .9rem;
@@ -98,39 +88,13 @@
     background: var(--card);
     padding: 0 .5rem;
   }
-  .rij {
-    display: flex;
-    align-items: baseline;
-    gap: .7rem;
-    padding: .45rem 0;
-    font-size: .96rem;
-  }
+  .rij { display: flex; align-items: baseline; gap: .7rem; padding: .45rem 0; font-size: .96rem; }
   .rij .naam { flex: 1; }
-  .rij .dot {
-    flex: 0 0 auto;
-    width: 5px; height: 5px;
-    background: var(--roze);
-    border-radius: 50%;
-    opacity: .55;
-    margin-bottom: .35rem;
-  }
-  .rij .duur {
-    color: var(--soft);
-    font-size: .85rem;
-    white-space: nowrap;
-  }
-  .rij .prijs {
-    font-weight: 500;
-    color: var(--ink);
-    white-space: nowrap;
-    min-width: 4.6rem;
-    text-align: right;
-  }
-  .rij.gratis .prijs { color: var(--goud); }
-  .foot {
-    text-align: center;
-    margin: 2.2rem 0 1rem;
-  }
+  .rij .dot { flex: 0 0 auto; width: 5px; height: 5px; background: var(--roze); border-radius: 50%; opacity: .55; margin-bottom: .35rem; }
+  .rij .duur { color: var(--soft); font-size: .85rem; white-space: nowrap; }
+  .rij .prijs { font-weight: 500; color: var(--ink); white-space: nowrap; min-width: 4.8rem; text-align: right; }
+  .zorgvergoed { font-size: .8rem; color: var(--goud); font-style: italic; font-family: 'Jost', sans-serif; }
+  .foot { text-align: center; margin: 2.2rem 0 1rem; }
   .knop {
     display: inline-block;
     background: #c98d99;
@@ -144,13 +108,7 @@
     transition: background .25s;
   }
   .knop:hover { background: #b9828e; }
-  .notitie {
-    text-align: center;
-    color: var(--soft);
-    font-size: .85rem;
-    margin: 1rem 0 0;
-    font-style: italic;
-  }
+  .notitie { text-align: center; color: var(--soft); font-size: .85rem; margin: 1rem 0 0; font-style: italic; }
   footer { text-align: center; padding: 2.4rem 0 3rem; color: var(--soft); font-size: .82rem; }
   @media (max-width: 480px) {
     .rij .duur { display: none; }
@@ -166,135 +124,107 @@
       <p class="sub">Prijslijst — Rotterdam</p>
 
       <nav>
-        <a href="index.html" class="aktief">Home</a>
-        <a href="prijslijst.html">Prijslijst</a>
+        <a href="index.html">Home</a>
+        <a href="prijslijst.html" class="aktief">Prijslijst</a>
         <a href="https://trea.tw/7MJiUbj4azLucF9tb" target="_blank" rel="noopener">Online boeken</a>
       </nav>
     </header>
 
     <div class="bloemen">✿ ❀ ✿</div>
 
-    <section id="facials">
+    <section>
       <div class="cat">
-        <h2>Facials — Gezichtsbehandelingen</h2>
-        <div class="rij"><span class="naam">Bronze facial</span><span class="dot"></span><span class="duur">30 min</span><span class="prijs">€79,95</span></div>
-        <div class="rij"><span class="naam">Bronze facial + eye peeling</span><span class="dot"></span><span class="duur">40 min</span><span class="prijs">€119,95</span></div>
-        <div class="rij"><span class="naam">Gold facial</span><span class="dot"></span><span class="duur">60 min</span><span class="prijs">€149,95</span></div>
-        <div class="rij"><span class="naam">Gold facial + eye peeling</span><span class="dot"></span><span class="duur">70 min</span><span class="prijs">€189,95</span></div>
-        <div class="rij"><span class="naam">Calming skin facial — huidverjonging, huidvernieuwing &amp; hydratatie</span><span class="dot"></span><span class="duur">90 min</span><span class="prijs">€195,95</span></div>
-        <div class="rij"><span class="naam">CO2 behandeling — Peel2Glow</span><span class="dot"></span><span class="duur">60 min</span><span class="prijs">€149,95</span></div>
-        <div class="rij"><span class="naam">CO2 behandeling — Glass skin (CO2 + eye peeling)</span><span class="dot"></span><span class="duur">75 min</span><span class="prijs">€189,95</span></div>
-        <div class="rij"><span class="naam">Glowing Skin Facial</span><span class="dot"></span><span class="duur">30 min</span><span class="prijs">€129,95</span></div>
-        <div class="rij"><span class="naam">Eye peeling — anti-rimpel, verheldert oogcontour</span><span class="dot"></span><span class="duur">20 min</span><span class="prijs">€49,95</span></div>
+        <h2>Gezichtsbehandelingen</h2>
+        <div class="rij"><span class="naam">Gezichtsbehandeling — Basic</span><span class="dot"></span><span class="duur">1 u</span><span class="prijs">€75</span></div>
+        <div class="rij"><span class="naam">Gezichtsbehandeling — Acne</span><span class="dot"></span><span class="duur">1 u 15 min</span><span class="prijs">€100</span></div>
+        <div class="rij"><span class="naam">Gezichtsbehandeling — Peel2Glow</span><span class="dot"></span><span class="duur">1 u 30 min</span><span class="prijs">€125</span></div>
+        <div class="rij"><span class="naam">Gezichtsbehandeling — Mannen</span><span class="dot"></span><span class="duur">1 u</span><span class="prijs">€75</span></div>
+        <div class="rij"><span class="naam">Gezichtsbehandeling — Tieners t/m 17 jaar</span><span class="dot"></span><span class="duur">30 min</span><span class="prijs">€50</span></div>
       </div>
     </section>
 
-    <section id="acne">
+    <section>
       <div class="cat">
-        <h2>Acne Therapie</h2>
-        <div class="rij"><span class="naam">Acne therapie — gezicht</span><span class="dot"></span><span class="duur">60 min</span><span class="prijs">€149,95</span></div>
-        <div class="rij"><span class="naam">Acne therapie — rug</span><span class="dot"></span><span class="duur">60 min</span><span class="prijs">€189,95</span></div>
+        <h2>Peelings — Lira Clinical</h2>
+        <div class="rij"><span class="naam">Bio kruidenpeeling — geschikt voor elke huid</span><span class="dot"></span><span class="duur">1 u</span><span class="prijs">€150</span></div>
+        <div class="rij"><span class="naam">30% Pure Vitamine C peeling — tegen roodheid en pigmentatie</span><span class="dot"></span><span class="duur">1 u</span><span class="prijs">€150</span></div>
+        <div class="rij"><span class="naam">Enzyme peeling — zuiverend op onzuiverheden</span><span class="dot"></span><span class="duur">1 u</span><span class="prijs">€150</span></div>
+        <div class="rij"><span class="naam">TCA peeling — gegarandeerd schilferen</span><span class="dot"></span><span class="duur">1 u</span><span class="prijs">€150</span></div>
       </div>
     </section>
 
-    <section id="camouflage">
+    <section>
       <div class="cat">
-        <h2>Camouflage Therapie — Hyperpigmentatie</h2>
-        <div class="rij gratis"><span class="naam">Intake / consult</span><span class="dot"></span><span class="duur">25 min</span><span class="prijs">Gratis</span></div>
-        <div class="rij"><span class="naam">Camouflage therapie behandeling</span><span class="dot"></span><span class="duur">60 min</span><span class="prijs">€149,95</span></div>
+        <h2>Acne Therapie <span class="zorgvergoed">(vergoed door de zorgverzekeraar)</span></h2>
+        <div class="rij"><span class="naam">Acne therapie — gezicht</span><span class="dot"></span><span class="duur">1 u 15 min</span><span class="prijs">€100</span></div>
+        <div class="rij"><span class="naam">Acne therapie gezicht — voordeelpakket 3 sessies</span><span class="dot"></span><span class="duur">1 u 15 min</span><span class="prijs">€250</span></div>
       </div>
     </section>
 
-    <section id="coagulatie">
+    <section>
       <div class="cat">
-        <h2>Coagulatie Therapie — Gerstekorrels &amp; huidaanhangsels</h2>
-        <div class="rij gratis"><span class="naam">Intake / consult</span><span class="dot"></span><span class="duur">25 min</span><span class="prijs">Gratis</span></div>
-        <div class="rij"><span class="naam">Coagulatie therapie behandeling</span><span class="dot"></span><span class="duur">30 min</span><span class="prijs">€99,95</span></div>
+        <h2>Camouflage Therapie <span class="zorgvergoed">(vergoed door de zorgverzekeraar)</span></h2>
+        <div class="rij"><span class="naam">Camouflage therapie</span><span class="dot"></span><span class="duur">1 u</span><span class="prijs">€100</span></div>
       </div>
     </section>
 
-    <section id="dermaplaning">
+    <section>
       <div class="cat">
-        <h2>Dermaplaning</h2>
-        <div class="rij"><span class="naam">Dermaplaning behandeling</span><span class="dot"></span><span class="duur">45 min</span><span class="prijs">€149,95</span></div>
+        <h2>Coagulatie Therapie</h2>
+        <div class="rij"><span class="naam">Coagulatie — op het gezicht <em style="color:var(--soft); font-size:.85rem;">(verwijderen huidaanhangsels &amp; gerstekorrels)</em></span><span class="dot"></span><span class="duur">15 min</span><span class="prijs">€25</span></div>
+        <div class="rij"><span class="naam">Coagulatie — op het lichaam</span><span class="dot"></span><span class="duur">30 min</span><span class="prijs">€50</span></div>
       </div>
     </section>
 
-    <section id="formen">
+    <section>
       <div class="cat">
-        <h2>For Men</h2>
-        <div class="rij gratis"><span class="naam">Intake (deal)</span><span class="dot"></span><span class="duur">25 min</span><span class="prijs">Gratis</span></div>
-        <div class="rij"><span class="naam">Intake huidanalyse op maat + face passport &amp; eerste behandeling</span><span class="dot"></span><span class="duur">75 min</span><span class="prijs">€149,95</span></div>
-        <div class="rij"><span class="naam">Basic mannen facial</span><span class="dot"></span><span class="duur">30 min</span><span class="prijs">€79,95</span></div>
-        <div class="rij"><span class="naam">Deluxe facial</span><span class="dot"></span><span class="duur">60 min</span><span class="prijs">€149,95</span></div>
+        <h2>Microneedling inclusief LED therapie</h2>
+        <div class="rij"><span class="naam">Microneedling — zonder extra's</span><span class="dot"></span><span class="duur">45 min</span><span class="prijs">€150</span></div>
+        <div class="rij"><span class="naam">Microneedling — met hals/decolleté</span><span class="dot"></span><span class="duur">1 u</span><span class="prijs">€175</span></div>
       </div>
     </section>
 
-    <section id="intake">
+    <section>
       <div class="cat">
-        <h2>Intake Consults — Kosteloos</h2>
-        <div class="rij gratis"><span class="naam">Intake — huidanalyse</span><span class="dot"></span><span class="duur">25 min</span><span class="prijs">Gratis</span></div>
-        <div class="rij gratis"><span class="naam">Intake — uitgebreid</span><span class="dot"></span><span class="duur">45 min</span><span class="prijs">Gratis</span></div>
-        <div class="rij gratis"><span class="naam">Intake — evaluatie</span><span class="dot"></span><span class="duur">25 min</span><span class="prijs">Gratis</span></div>
-        <div class="rij"><span class="naam">Intake huidanalyse op maat + face passport &amp; eerste behandeling</span><span class="dot"></span><span class="duur">75 min</span><span class="prijs">€149,95</span></div>
+        <h2>Wimpers &amp; Wenkbrauwen — verven/epileren</h2>
+        <div class="rij"><span class="naam">Epileren of waxen — wenkbrauwen</span><span class="dot"></span><span class="duur">30 min</span><span class="prijs">vanaf €20</span></div>
+        <div class="rij"><span class="naam">Verven — wimpers</span><span class="dot"></span><span class="duur">30 min</span><span class="prijs">€10</span></div>
+        <div class="rij"><span class="naam">Verven — wenkbrauwen</span><span class="dot"></span><span class="duur">30 min</span><span class="prijs">vanaf €20</span></div>
+        <div class="rij"><span class="naam">Verven — wimpers &amp; wenkbrauwen</span><span class="dot"></span><span class="duur">30 min</span><span class="prijs">vanaf €25</span></div>
+        <div class="rij"><span class="naam">Epileren &amp; verven — wenkbrauwen</span><span class="dot"></span><span class="duur">30 min</span><span class="prijs">€25</span></div>
       </div>
     </section>
 
-    <section id="lira">
+    <section>
       <div class="cat">
-        <h2>Lira Clinical — Peelings</h2>
-        <div class="rij"><span class="naam">Vita Brite peeling — 30% pure vitamine C</span><span class="dot"></span><span class="duur">45 min</span><span class="prijs">€149,95</span></div>
-        <div class="rij"><span class="naam">Vita Brite peeling + eye peeling</span><span class="dot"></span><span class="duur">55 min</span><span class="prijs">€189,95</span></div>
-        <div class="rij"><span class="naam">Enzyme peeling</span><span class="dot"></span><span class="duur">45 min</span><span class="prijs">€149,95</span></div>
-        <div class="rij"><span class="naam">Enzyme peeling + eye peeling</span><span class="dot"></span><span class="duur">55 min</span><span class="prijs">€189,95</span></div>
-        <div class="rij"><span class="naam">Bio Kruiden Peeling</span><span class="dot"></span><span class="duur">45 min</span><span class="prijs">€169,95</span></div>
-        <div class="rij"><span class="naam">TCA 15% Peeling</span><span class="dot"></span><span class="duur">20 min</span><span class="prijs">€189,95</span></div>
+        <h2>Waxen — Wenkbrauwen/Bovenlip</h2>
+        <div class="rij"><span class="naam">Bovenlip waxen</span><span class="dot"></span><span class="duur">15 min</span><span class="prijs">€10</span></div>
+        <div class="rij"><span class="naam">Wenkbrauwen waxen</span><span class="dot"></span><span class="duur">30 min</span><span class="prijs">€20</span></div>
+        <div class="rij"><span class="naam">Wenkbrauwen &amp; bovenlip waxen</span><span class="dot"></span><span class="duur">30 min</span><span class="prijs">€25</span></div>
       </div>
     </section>
 
-    <section id="microneedling">
+    <section>
       <div class="cat">
-        <h2>Microneedling</h2>
-        <div class="rij gratis"><span class="naam">Intake / consult</span><span class="dot"></span><span class="duur">10 min</span><span class="prijs">Gratis</span></div>
-        <div class="rij"><span class="naam">Microneedling</span><span class="dot"></span><span class="duur">45 min</span><span class="prijs">€149,95</span></div>
-        <div class="rij"><span class="naam">Microneedling + nek</span><span class="dot"></span><span class="duur">50 min</span><span class="prijs">€199,90</span></div>
-        <div class="rij"><span class="naam">Microneedling + nek en decolleté</span><span class="dot"></span><span class="duur">60 min</span><span class="prijs">€224,90</span></div>
+        <h2>Wimperlift — Lashlifting</h2>
+        <div class="rij"><span class="naam">Wimperlifting</span><span class="dot"></span><span class="duur">1 u</span><span class="prijs">vanaf €60</span></div>
+        <div class="rij"><span class="naam">Wimperlift &amp; wenkbrauwen epileren/waxen</span><span class="dot"></span><span class="duur">1 u 15 min</span><span class="prijs">vanaf €70</span></div>
       </div>
     </section>
 
-    <section id="oedeem">
+    <section>
       <div class="cat">
-        <h2>Oedeem Therapie — Lymfecirculatie</h2>
-        <div class="rij gratis"><span class="naam">Intake / consult</span><span class="dot"></span><span class="duur">25 min</span><span class="prijs">Gratis</span></div>
-        <div class="rij"><span class="naam">Oedeemtherapie behandeling</span><span class="dot"></span><span class="duur">30 min</span><span class="prijs">€99,95</span></div>
-        <div class="rij"><span class="naam">Littekentherapie behandeling</span><span class="dot"></span><span class="duur">30 min</span><span class="prijs">€99,95</span></div>
-      </div>
-    </section>
-
-    <section id="skinpen">
-      <div class="cat">
-        <h2>SkinPen</h2>
-        <div class="rij gratis"><span class="naam">Intake / consult</span><span class="dot"></span><span class="duur">10 min</span><span class="prijs">Gratis</span></div>
-        <div class="rij"><span class="naam">SkinPen behandeling</span><span class="dot"></span><span class="duur">45 min</span><span class="prijs">€235,00</span></div>
-      </div>
-    </section>
-
-    <section id="wimpers">
-      <div class="cat">
-        <h2>Wimpers &amp; Wenkbrauwen</h2>
-        <div class="rij"><span class="naam">Wenkbrauwen shapen — epileren of waxen (verven mogelijk)</span><span class="dot"></span><span class="duur">30 min</span><span class="prijs">€29,95</span></div>
-        <div class="rij"><span class="naam">Wenkbrauwen shapen — epileren of waxen én verven</span><span class="dot"></span><span class="duur">30 min</span><span class="prijs">€49,95</span></div>
-        <div class="rij"><span class="naam">Lashlift (verven mogelijk)</span><span class="dot"></span><span class="duur">60 min</span><span class="prijs">€59,95</span></div>
-        <div class="rij"><span class="naam">Lashlift met verven</span><span class="dot"></span><span class="duur">60 min</span><span class="prijs">€64,95</span></div>
-        <div class="rij"><span class="naam">Bovenlip waxen</span><span class="dot"></span><span class="duur">10 min</span><span class="prijs">€19,95</span></div>
-        <div class="rij"><span class="naam">Wenkbrauwen verven</span><span class="dot"></span><span class="duur">20 min</span><span class="prijs">€29,95</span></div>
-        <div class="rij"><span class="naam">Wimpers verven</span><span class="dot"></span><span class="duur">20 min</span><span class="prijs">€19,95</span></div>
+        <h2>Wimperextensions</h2>
+        <div class="rij"><span class="naam">One by One — nieuwe set</span><span class="dot"></span><span class="duur">2 uur</span><span class="prijs">€100</span></div>
+        <div class="rij"><span class="naam">One by One — opvullen</span><span class="dot"></span><span class="duur">1 u – 1 u 30 min</span><span class="prijs">vanaf €50</span></div>
+        <div class="rij"><span class="naam">Mega Volume — nieuwe set</span><span class="dot"></span><span class="duur">2 uur</span><span class="prijs">€125</span></div>
+        <div class="rij"><span class="naam">Mega Volume — opvullen</span><span class="dot"></span><span class="duur">1 u – 1 u 30 min</span><span class="prijs">vanaf €60</span></div>
       </div>
     </section>
 
     <div class="foot">
       <a class="knop" href="https://trea.tw/7MJiUbj4azLucF9tb" target="_blank" rel="noopener">Online boeken</a>
-      <p class="notitie">Alle behandelingen zijn inclusief persoonlijk advies. Gratis intakes zijn kosteloos en vrijblijvend.</p>
+      <p class="notitie">Alle behandelingen inclusief persoonlijk advies. Acne- en camouflage-therapie worden (deels) vergoed door de zorgverzekeraar.</p>
     </div>
 
     <footer>
